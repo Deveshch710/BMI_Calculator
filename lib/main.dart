@@ -9,13 +9,14 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
 
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white54),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'BMI CALCULATOR'),
@@ -55,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
       body: Container(
-        //creating a color according to the bmi reasult
+        //creating a color according to the bmi result
         color: bgcolor,
         //it align the columns in center
         child: Center(
